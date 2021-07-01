@@ -5,6 +5,6 @@ const router = Router()
 router.get('/films', controller.getFilm)
 router.post('/films/:id', controller.addFilm)
 router.get('/films/:id', controller.getFilmByIdGenre)
-router.get('/films/:id', controller.getFilmById)
+router.get('/film/:id', controller.getFilmById)
 
 module.exports = router
