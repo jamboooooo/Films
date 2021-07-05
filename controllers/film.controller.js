@@ -29,7 +29,7 @@ const getFilm = async(req, res) => {
 };
 
 const getFilmById = async(req, res) => {
-    const film = await Film.findById(req.param.id);
+    const film = await Film.find({ _id: req.params.id });
     if (film.length === 0) {
         res.json("Пока фильмов нет");
     } else {
